@@ -1,0 +1,28 @@
+/* Header.css */
+/* ... (existing styles remain unchanged) */
+
+/* Mobile menu styles */
+.visible-on-mobile {
+  display: block;
+}
+
+.hidden-on-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .visible-on-mobile {
+    display: none;
+  }
+
+  .hidden-on-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust this value according to your design */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Add a background color for better visibility */
+    z-index: 1000;
+  }
+}
